@@ -3,12 +3,20 @@
     "344e743686735202b1d7d8cdb5a2ba161e7f837f": {
       "workers": {
         "app/dashboard/invoices/page": "[project]/.next-internal/server/app/dashboard/invoices/page/actions.js { ACTIONS_MODULE0 => \"[project]/app/lib/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
-        "app/dashboard/invoices/create/page": "[project]/.next-internal/server/app/dashboard/invoices/create/page/actions.js { ACTIONS_MODULE0 => \"[project]/app/lib/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
         "app/dashboard/invoices/[id]/edit/page": "[project]/.next-internal/server/app/dashboard/invoices/[id]/edit/page/actions.js { ACTIONS_MODULE0 => \"[project]/app/lib/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)"
       },
       "layer": {
         "app/dashboard/invoices/page": "rsc",
-        "app/dashboard/invoices/create/page": "rsc",
+        "app/dashboard/invoices/[id]/edit/page": "action-browser"
+      }
+    },
+    "fdda32d133c9013289279e5c6922829d9811e4ab": {
+      "workers": {
+        "app/dashboard/invoices/page": "[project]/.next-internal/server/app/dashboard/invoices/page/actions.js { ACTIONS_MODULE0 => \"[project]/app/lib/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
+        "app/dashboard/invoices/[id]/edit/page": "[project]/.next-internal/server/app/dashboard/invoices/[id]/edit/page/actions.js { ACTIONS_MODULE0 => \"[project]/app/lib/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)"
+      },
+      "layer": {
+        "app/dashboard/invoices/page": "rsc",
         "app/dashboard/invoices/[id]/edit/page": "action-browser"
       }
     },
@@ -20,14 +28,6 @@
       "layer": {
         "app/dashboard/invoices/page": "rsc",
         "app/dashboard/invoices/[id]/edit/page": "action-browser"
-      }
-    },
-    "fdda32d133c9013289279e5c6922829d9811e4ab": {
-      "workers": {
-        "app/dashboard/invoices/page": "[project]/.next-internal/server/app/dashboard/invoices/page/actions.js { ACTIONS_MODULE0 => \"[project]/app/lib/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)"
-      },
-      "layer": {
-        "app/dashboard/invoices/page": "rsc"
       }
     }
   },

@@ -14,6 +14,7 @@
 
 # production
 /build
+/app/seed/
 
 # misc
 .DS_Store
