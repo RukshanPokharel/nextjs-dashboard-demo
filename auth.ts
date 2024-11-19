@@ -35,6 +35,10 @@ export const { auth, signIn, signOut } = NextAuth({
           const passwordsMatch = await bcrypt.compare(password, user.password);
           if (passwordsMatch) return user;
         }
+        //this return null was added later because of type mismatch error in TypeScript.
+        // The function authorize is expected to return a Promise<User | null>, but the code currently allows undefined to be a possible return type, which TypeScript doesn't accept.
+        //To fix this, ensure that the authorize function always returns either a User object or null, but not undefined.
+        return null;
       },
     }),
   ],
